@@ -1,6 +1,10 @@
-package com.example.demo;
+package com.example.demo.entities;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.format.annotation.DateTimeFormat;
+
+
 public class Person {
 
     @Id private String id;
