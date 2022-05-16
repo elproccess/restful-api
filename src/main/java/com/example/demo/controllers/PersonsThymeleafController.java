@@ -18,7 +18,7 @@ public class PersonsThymeleafController {
 
     @GetMapping("/persons-ui")
     public String persons(Model model){
-        model.addAttribute("persons", personService.getAllPerson());
+        model.addAttribute("people", personService.getAllPerson());
         return "persons";
     }
 }
