@@ -23,19 +23,19 @@ public class PersonService {
         return personRepository.save(person);
     }
 
-    public Iterable<Person> getAllReservations(){
+    public Iterable<Person> getAllPerson(){
         return personRepository.findAll();
     }
 
-    public void deleteAllReservations(){
+    public void deleteAllPerson(){
         personRepository.deleteAll();
     }
 
-    public void deleteReservationById(String id){
+    public void deletePersonById(String id){
         personRepository.deleteById(id);
     }
 
-    public Optional<Person> findReservationById(String id){
+    public Optional<Person> findPersonById(String id){
         return personRepository.findById(id);
     }
 
